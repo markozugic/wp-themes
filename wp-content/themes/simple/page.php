@@ -8,21 +8,17 @@
                         <h3>
                             <?php the_title(); ?>
                         </h3>
-                        <div class="meta">
-                            Created by <?php the_author(); ?> on <?php the_time( 'F j, Y g:ia' ); ?>
-                        </div>
                         <?php if ( has_post_thumbnail() ) : ?>
-                            <div class="post-thumbnail">
-                                <?php the_post_thumbnail() ?>
-                            </div>
+                        <div class="post-thumbnail">
+                            <?php the_post_thumbnail() ?>
+                        </div>
                         <?php endif; ?>
                         <?php the_content(); ?>
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>
-                <?php echo wpautop( 'Sorry no posts were found' ); ?>
+                <?php echo wpautop('Sorry no posts were found'); ?>
             <?php endif; ?>
-            <?php comments_template(); ?>
     </div>
 
 <?php get_footer(); ?>
