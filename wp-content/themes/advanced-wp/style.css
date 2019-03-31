@@ -138,6 +138,15 @@ article.post .meta {
     padding: 7px;
 }
 
+article.post .meta a {
+    color: #ffffff;
+}
+
+article .post-thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
 .button {
     background:  #009acd;
     color: #ffffff;
@@ -176,4 +185,15 @@ footer.main-footer li {
 
 footer.main-footer a {
     color: #ffffff;
+}
+
+.archive-post {
+    border-bottom: #ccc 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.archive-post h4, .archive-post p {
+    margin: 0;
+    padding: 0;
 }

@@ -2,25 +2,19 @@
 
     <div class="container content">
         <div class="main block">
+            <h1 class="page-header">
+                Search Result
+            </h1>
             <?php if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <article class="post">
-                        <h2><?php the_title(); ?></h2>
-                        <p class="meta">
-                            Posted at
-                            <?php the_time( 'F j, Y g:i a' ); ?>
-                            <?php avd_get_author_meta(); ?>
-                            Posted in
-                            <?php avd_get_categories_for_post(); ?>
-                        </p>
-                        <?php if ( has_post_thumbnail() ) : ?>
-                            <div class="post-thumbnail">
-                                <?php the_post_thumbnail() ?>
-                            </div>
-                        <?php endif; ?>
-                        <p><?php the_excerpt(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="button">Read More</a>
-                    </article>
+                    <div class="archive-post">
+                        <h4>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_title(); ?>
+                            </a>
+                        </h4>
+                        <p>Posted on: <?php the_time( 'F j, Y g:i a' ); ?></p>
+                    </div>
                 <?php endwhile; ?>
             <?php else : ?>
                 <?php wpautop( 'Sorry, not posts were found' ); ?>

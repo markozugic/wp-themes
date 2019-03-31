@@ -8,7 +8,8 @@
                         <h2><?php the_title(); ?></h2>
                         <p class="meta">
                             Posted at
-                            <?php the_time( 'F j, Y g:i a' ); ?>
+                            <?php the_time( 'F j, Y g:i' ); ?>
+                            on May 9 by
                             <?php avd_get_author_meta(); ?>
                             Posted in
                             <?php avd_get_categories_for_post(); ?>
@@ -18,8 +19,7 @@
                                 <?php the_post_thumbnail() ?>
                             </div>
                         <?php endif; ?>
-                        <p><?php the_excerpt(); ?></p>
-                        <a href="<?php the_permalink(); ?>" class="button">Read More</a>
+                        <p><?php the_content(); ?></p>
                     </article>
                 <?php endwhile; ?>
             <?php else : ?>
