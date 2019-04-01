@@ -113,13 +113,13 @@ a.hover-reverse:hover, a.hover-reverse:focus, a.hover-reverse:active {
   width: 100%;
   z-index: 4;
   position: absolute;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.65);
   -webkit-transition: .8s all ease-out;
-  transition: .8s all ease-out;
+  transition: .7s all ease-out;
 }
 
 .probootstrap-header:hover, .probootstrap-header:focus, .probootstrap-header:active {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .probootstrap-logo {
