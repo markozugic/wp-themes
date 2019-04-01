@@ -28,3 +28,4 @@ wp-content/*
 wp-content/themes/*
 !wp-content/themes/simple/
 !wp-content/themes/advanced-wp/
+!wp-content/themes/skrozzzfit/
